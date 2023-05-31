@@ -1,9 +1,9 @@
 --Aluno: Gustavo Casati
 --Turma: SI1N
 
-DROP DATABASE uvv;
+DROP DATABASE IF EXISTS uvv;
 
-DROP ROLE gustavo_casati;
+DROP ROLE IF EXISTS gustavo_casati;
 
 -- crio meu usuário com senha encriptada
 
