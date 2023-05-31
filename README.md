@@ -11,7 +11,7 @@ Aluno: Gustavo Augusto de Oliveira Casati.
 
 
 
-Turma: SI1N
+Turma: SI1N.
 
 
 
