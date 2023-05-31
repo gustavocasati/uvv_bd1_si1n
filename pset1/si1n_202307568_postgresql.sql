@@ -1,7 +1,8 @@
---Aluno: Gustavo Casati
---Turma: SI1N
+-- apago o banco de dados uvv, caso ele exista
 
 DROP DATABASE IF EXISTS uvv;
+
+-- apago o usuário, caso ele já exista
 
 DROP ROLE IF EXISTS gustavo_casati;
 
