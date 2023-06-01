@@ -121,6 +121,7 @@ CREATE TABLE clientes (
                 telefone3 VARCHAR(20),
                 CONSTRAINT cliente_id_pk PRIMARY KEY (cliente_id)
 );
+COMMENT ON TABLE estoques IS 'tabela de controle dos clientes';
 COMMENT ON COLUMN clientes.cliente_id IS 'registro dos clientes';
 COMMENT ON COLUMN clientes.email IS 'email do cliente';
 COMMENT ON COLUMN clientes.nome IS 'nome do cliente';
