@@ -16,4 +16,4 @@ Turma: SI1N.
 
 
 
-Repositório para o PSET-1, do professor Abrantes Araújo Silva Filho.
+Repositório para o PSET-1 do professor Abrantes Araújo Silva Filho.
