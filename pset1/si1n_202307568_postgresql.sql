@@ -95,7 +95,7 @@ COMMENT ON COLUMN lojas.logo_arquivo IS 'arquivo da logo';
 COMMENT ON COLUMN lojas.logo_charset IS 'charset da logo';
 COMMENT ON COLUMN lojas.logo_ultima_atualizacao IS 'ultima atualização da logo';
 
--- criação da tabela estoques, para controle dos produtos e quantidade dos mesmos
+-- criação da tabela estoques para controle dos produtos e quantidade dos mesmos
 
 CREATE TABLE estoques (
                 estoque_id NUMERIC(38) NOT NULL,
@@ -110,7 +110,7 @@ COMMENT ON COLUMN estoques.loja_id IS 'id da loja';
 COMMENT ON COLUMN estoques.produto_id IS 'id do produto';
 COMMENT ON COLUMN estoques.quantidade IS 'quantidade do produto em estoque';
 
--- criação da tabela clientes, com todos os dados de contato dos clientes 
+-- criação da tabela clientes com todos os dados de contato dos clientes 
 
 CREATE TABLE clientes (
                 cliente_id NUMERIC(38) NOT NULL,
@@ -129,7 +129,7 @@ COMMENT ON COLUMN clientes.telefone1 IS 'telefone primário';
 COMMENT ON COLUMN clientes.telefone2 IS 'telefone secundário';
 COMMENT ON COLUMN clientes.telefone3 IS 'terceiro telefone';
 
--- criação tabela envio, para controle de todos os envios realizados
+-- criação tabela envio para controle de todos os envios realizados
 
 CREATE TABLE envio (
                 envio_id NUMERIC(38) NOT NULL,
@@ -146,7 +146,7 @@ COMMENT ON COLUMN envio.cliente_id IS 'registro dos clientes';
 COMMENT ON COLUMN envio.endereco_entrega IS 'endereco de entrega';
 COMMENT ON COLUMN envio.status IS 'status do envio';
 
--- criação da tabela pedidos, para ter controle de todos os pedidos do sistema
+-- criação da tabela pedidos para ter controle de todos os pedidos do sistema
 
 CREATE TABLE pedidos (
                 pedido_id NUMERIC(38) NOT NULL,
