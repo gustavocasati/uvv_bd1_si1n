@@ -1,4 +1,4 @@
--- apago o banco de dados uvv, caso ele exista
+-- apago o banco de dados uvv, caso ele já exista
 
 DROP DATABASE IF EXISTS uvv;
 
