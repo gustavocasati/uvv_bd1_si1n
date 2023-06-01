@@ -42,7 +42,7 @@ SET SEARCH_PATH TO lojas, "$user", public;
 ALTER USER gustavo_casati
 SET SEARCH_PATH TO lojas, "$user", public;
 
--- criação da tabela produtos com as informações e dados de cada produto vendido.
+-- criação da tabela produtos com as informações e dados de cada produto vendido
 
 CREATE TABLE produtos (
                 produto_id NUMERIC(38) NOT NULL,
@@ -95,7 +95,7 @@ COMMENT ON COLUMN lojas.logo_arquivo IS 'arquivo da logo';
 COMMENT ON COLUMN lojas.logo_charset IS 'charset da logo';
 COMMENT ON COLUMN lojas.logo_ultima_atualizacao IS 'ultima atualização da logo';
 
--- criação da tabela estoques para controle dos produtos e quantidade dos mesmos
+-- criação da tabela estoques, para controle dos produtos e quantidade dos mesmos
 
 CREATE TABLE estoques (
                 estoque_id NUMERIC(38) NOT NULL,
@@ -110,7 +110,7 @@ COMMENT ON COLUMN estoques.loja_id IS 'id da loja';
 COMMENT ON COLUMN estoques.produto_id IS 'id do produto';
 COMMENT ON COLUMN estoques.quantidade IS 'quantidade do produto em estoque';
 
--- criação tabela clientes com todos os dados de contato de cada cliente registrado no sistema
+-- criação da tabela clientes, com todos os dados de contato dos clientes 
 
 CREATE TABLE clientes (
                 cliente_id NUMERIC(38) NOT NULL,
@@ -146,7 +146,7 @@ COMMENT ON COLUMN envio.cliente_id IS 'registro dos clientes';
 COMMENT ON COLUMN envio.endereco_entrega IS 'endereco de entrega';
 COMMENT ON COLUMN envio.status IS 'status do envio';
 
--- criação da tabela pedidos para ter controle de todos os pedidos do sistema
+-- criação da tabela pedidos, para ter controle de todos os pedidos do sistema
 
 CREATE TABLE pedidos (
                 pedido_id NUMERIC(38) NOT NULL,
@@ -163,7 +163,7 @@ COMMENT ON COLUMN pedidos.cliente_id IS 'id do cliente';
 COMMENT ON COLUMN pedidos.status IS 'status do pedido';
 COMMENT ON COLUMN pedidos.loja_id IS 'id da loja';
 
--- criação da tabela para ter controle de todos os itens presentes no pedido do cliente.
+-- criação da tabela para ter controle de todos os itens presentes no pedido do cliente
 
 CREATE TABLE pedidos_itens (
                 pedido_id NUMERIC(38) NOT NULL,
